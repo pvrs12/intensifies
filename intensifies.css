@@ -1,0 +1,11 @@
+@keyframes shake {
+    0% { transform: translateX(calc(var(--intensifactor) * -1px)); }
+    100% { transform: translateX(calc(var(--intensifactor) * 1px)); }
+ }
+ 
+ .intensified {
+     --intensifactor: 0;
+     animation: shake .05s infinite alternate;
+     /* border: 1px solid black; */
+     display: inline-block;
+ }

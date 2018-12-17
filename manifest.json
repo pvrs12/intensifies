@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "intensifies",
+    "version": "0.0.1",
+  
+    "description": "Modifies slack to cause repeated * characters to further bold and shake text",
+  
+    "content_scripts": [
+        {
+            "matches": ["*://*.slack.com/*"],
+            "js": ["intensifies.js"],
+            "css": ["intensifies.css"]
+        }
+    ],
+
+    "applications": {
+        "gecko": {
+          "id": "intensifies@pvrs12.gmail.com"
+        }
+      }
+  }
