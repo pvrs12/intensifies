@@ -8,4 +8,7 @@
      animation: shake .05s infinite alternate;
      /* border: 1px solid black; */
      display: inline-block;
+     font-weight: calc(var(--intensifactor) * 20 + 400);
+     padding-left: 2px;
+     padding-right: 2px;
  }
